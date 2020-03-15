@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+
+//Metodo main para crear la clase consultarListaEstablecimiento
+//@param  clase ConsultarListaEstablecimiento
+void main() => runApp(ConsultarListaEstablecimiento());
+
+//clase consultarListaEstablecimiento sin clase para salir campos en la interfaz 
+
+class ConsultarListaEstablecimiento extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(home: Scaffold(appBar: AppBar(title: Center(child: Text('Establecimientos',style:TextStyle(fontSize: 30) ,)
+    ),
+    backgroundColor: Colors.red ,
+    ),body: Container(
+        child: Center(
+          child: Column(
+            children: <Widget>[
+               Text("  ",style: TextStyle(fontSize: 17),),
+              TextField(                                 
+                 decoration: InputDecoration(
+                  hintText: 'Buscar Establecimientos'
+                ),                
+                ),Icon (Icons.search)
+      
+    
+            ]))),
+            )
+    );
+  
+  }
+
+}
